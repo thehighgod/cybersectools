@@ -14,6 +14,7 @@ def md5(data):
 
 while not found:
 	hash = md5(read_data + "\n" + str(loop_counter))
+	#I originally used this to get the hash to be 0e followed by 30 digits. This was to exploit a type juggling flaw in PHP
 	if (re.match("HASH or partial hash using REGEX", str(hash))):
 		found = True
 		print(hash)
