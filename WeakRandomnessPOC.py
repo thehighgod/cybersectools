@@ -11,12 +11,12 @@ def get_rnd(Round, time):
 req = requests.get('HOST')
 
 cook = req.cookies
-cook.set('rounds', str(9223372036854775808-500), domain='hackers.gg')
+cook.set('rounds', str(9223372036854775808-500), domain='HOST')
 
 while 1:
-        cook.set('PHPSESSID', str(1337), domain='hackers.gg')
-        cook.set('server-sesion-cookie-id', str(1337), domain='hackers.gg')
-        cook.set('session', str(1337), domain='hackers.gg')
+        cook.set('PHPSESSID', str(1337), domain='HOST')
+        cook.set('server-sesion-cookie-id', str(1337), domain='HOST')
+        cook.set('session', str(1337), domain='HOST')
         reqtextlist = req.text.split('\n')
         i = 0
         while i <= 8:
